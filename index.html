@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bull Brief</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset and Body Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Video Background */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Logo Styles */
+        .logo-wrapper {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .logo-wrapper img {
+            max-width: 150px;
+            height: auto;
+            display: inline-block;
+        }
+
+        /* Navigation Styles */
+        nav {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem; /* Larger font size */
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent; /* Invisible border for hover effect */
+            border-radius: 5px;
+            transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700; /* Gold color */
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+            border-color: #FFD700; /* Gold border */
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: none; /* No banner effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="video-background" autoplay muted loop>
+        <source src="uva rotunda.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Logo -->
+    <div class="logo-wrapper">
+        <a href="index.html">
+            <img src="logo.png" alt="The Bull Brief Logo">
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="markets.html">Markets</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="sectors.html">Sectors</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+      
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
